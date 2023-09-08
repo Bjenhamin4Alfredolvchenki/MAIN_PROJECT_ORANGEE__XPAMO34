@@ -12,12 +12,54 @@
 <!-- +++++++++++++++++++++++++++++++++++++++++++ -->
 <!-- +++++++++++++++++++++++++++++++++++++++++++ -->
     
-    
+<style>
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+</style>
+
+
 <!-- +++++++++++++++++++++++++++++++++++++++++++ -->
 <!-- +++++++++++++++++++++++++++++++++++++++++++ -->
 <!-- +++++++++++++++++++++++++++++++++++++++++++ -->
 
 <style>
+
 body {
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
@@ -89,7 +131,7 @@ body {font-family: "Lato", sans-serif;}
 <!-- +++++++++++++++++++++++++++++++++++++++++++ -->
 
 
-<body class="w3-animate-opacity" style="background-color:#ff6600">
+<body class="w3-animate-opacity">
 
 <!-- +++++++++++++++++++++++++++++++++++++++++++ -->
 <!-- +++++++++++++++++++++++++++++++++++++++++++ -->
@@ -118,7 +160,20 @@ body {font-family: "Lato", sans-serif;}
 <div class="main">
 <br><hr>
 
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++ -->
+<!-- +++++++++++++++++++++++++++++++++++++++++++ -->
+
+<div class="tooltip">Hover over me
+  <span class="tooltiptext">Tooltip text</span>
+</div>
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++ -->
+<!-- +++++++++++++++++++++++++++++++++++++++++++ -->
+
+
 <div class="w3-container w3-padding-16 w3-card" style="background-color:#eee">
+
 
 <h3 class="w3-center">Blog Template</h3>
 <div class="w3-content" style="max-width:1200px">
@@ -126,6 +181,19 @@ body {font-family: "Lato", sans-serif;}
 <!-- +++++++++++++++++++++++++++++++++++++++++++ -->
 <!-- +++++++++++++++++++++++++++++++++++++++++++ -->
 
+ <iframe src="https://en.wikipedia.org/wiki/HTML_element#Frames"
+            frameborder="0" 
+            marginheight="0" 
+            marginwidth="0" 
+            width="100%" 
+            height="100%" 
+            scrolling="auto">
+  </iframe>
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++ -->
+<!-- +++++++++++++++++++++++++++++++++++++++++++ -->
+
+<br>
 <div class="w3-row">
   <div class="w3-col m6">
     <a href="tryw3css_templates_blog.htm" target="_blank" class="w3-button w3-padding-large w3-grey" style="width:98.5%">Demo</a>
@@ -141,10 +209,11 @@ body {font-family: "Lato", sans-serif;}
 
  <p>Lssorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
       
+      
+  <script src="//rss.bloople.net/?url=https%3A%2F%2Foilprice.com%2Frss%2Fmain&limit=5&showtitle=false&type=js"></script>
  
-<script src="//rss.bloople.net/?url=https%3A%2F%2Foilprice.com%2Frss%2Fmain&limit=5&showtitle=false&type=js"></script>
-  
-    <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+ 
+ <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
 
 <!-- +++++++++++++++++++++++++++++++++++++++++++ -->
 <!-- +++++++++++++++++++++++++++++++++++++++++++ -->
@@ -170,7 +239,6 @@ body {font-family: "Lato", sans-serif;}
 <!-- +++++++++++++++++++++++++++++++++++++++++++ -->
 <!-- +++++++++++++++++++++++++++++++++++++++++++ -->
 <!-- +++++++++++++++++++++++++++++++++++++++++++ -->
-
 
 
 
